@@ -16,15 +16,24 @@
   .ripple{position:absolute;border-radius:50%;background:rgba(255,255,255,.7);transform:scale(0);animation:ripple .6s linear;}
   @keyframes ripple{to{transform:scale(4);opacity:0;}}
   footer{background:#000428;color:white;padding:20px;text-align:center;}
+  .navbar-brand img{height:60px}
   </style>
 </head>
 <body>
 
+<nav class="navbar bg-white shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a class="navbar-brand" href="#">
+      <img src="images/logo.png" alt="DIYAR ALWAHA Logo">
+    </a>
+    <button class="btn btn-primary" onclick="scrollToNewspapers()">عرض الصحف</button>
+  </div>
+</nav>
+
 <section class="hero">
   <div class="container">
-    <h1 class="display-5 fw-bold">🏛️ دليل الصحف الرسمية في المملكة العربية السعودية</h1>
+    <h1 class="display-5 fw-bold mt-4">🏛️ دليل الصحف الرسمية في المملكة العربية السعودية</h1>
     <p class="lead mt-3">اكتشف أهم الصحف والمنصات الإعلامية الرسمية بسهولة من خلال منصة ديار الواحة</p>
-    <button class="btn btn-warning mt-4" onclick="scrollToNewspapers()">عرض الصحف</button>
   </div>
 </section>
 
